@@ -1,0 +1,3 @@
+export REMOTE_HOST=
+export REMOTE_USER=
+export REMOTE_PATH=~/painter/
