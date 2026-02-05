@@ -32,7 +32,7 @@ done
 
 DIR="checkpoints/$(date +"%Y-%m-%d-%H%M%S")"
 
-torchrun --standalone --nproc_per_node="$GPUS" train.py --dir "$DIR"
+torchrun --standalone --nproc_per_node="$GPUS" train.py --checkpoint-dir "$DIR"
 
 if [[ "$SHUTDOWN" == true ]]; then
     sudo poweroff

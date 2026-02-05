@@ -206,8 +206,6 @@ class Trainer:
 
         return avg_loss
 
-
-
     def _save_checkpoint(self, is_best: bool = False):
         if not self.is_master:
             return
